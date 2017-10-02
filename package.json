@@ -1,10 +1,10 @@
 {
   "name": "mongo2gzip",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Backup MongoDB Database to a compressed gzip file",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "istanbul cover node_modules/mocha/bin/_mocha"
   },
   "directories": {
     "test": "test"
@@ -12,6 +12,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kurapikats/mongo2gzip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kurapikats/mongo2gzip/issues"
   },
   "keywords": [
     "mongodb",
@@ -22,6 +25,7 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
     "mocha": "^3.5.3"
   }
 }
